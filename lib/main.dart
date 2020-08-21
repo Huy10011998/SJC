@@ -18,6 +18,10 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
+          flexibleSpace: Image(
+            image: AssetImage('assets/bg.jpg'),
+            fit: BoxFit.fitWidth,
+          ),
           backgroundColor: const Color(0xff0C3150),
           title: Text(
             'Bảng Giá Vàng SJC',
