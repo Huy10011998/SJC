@@ -38,7 +38,13 @@ class GoldListView extends StatefulWidget {
   @override
   _GoldListViewState createState() => _GoldListViewState();
 }
+class Gold {
+  String type;
+  String inGold;
+  String outGold;
 
+  Gold({this.type, this.inGold, this.outGold});
+}
 class _GoldListViewState extends State<GoldListView> {
   final goldData = <Gold>[];
   final goldStream = StreamController<List<Gold>>();
@@ -164,10 +170,4 @@ class _GoldListViewState extends State<GoldListView> {
   }
 }
 
-class Gold {
-  String type;
-  String inGold;
-  String outGold;
 
-  Gold({this.type, this.inGold, this.outGold});
-}
